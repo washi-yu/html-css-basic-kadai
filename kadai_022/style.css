@@ -1,0 +1,81 @@
+h1,p,body{
+    margin: 0;
+}
+p,a{
+  font-size: 20px; 
+}
+
+header{
+    background-color: rgb(244, 79, 79);
+    margin-bottom: 20px;
+}
+
+header h1{
+ text-align: center;
+ color: rgb(255, 255, 255);
+}
+
+main{
+    margin: 10px;
+}
+
+#parent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contents{ 
+    flex-basis: 25%;
+    border: solid 3px rgb(238, 204, 204);
+    text-align: center;
+    padding: 10px 15px;
+    margin: 20px 0px;
+}
+
+h2{
+    font-size: 25px;
+    border-bottom: dotted 3px rgb(236, 122, 122);
+}
+
+h2::before{
+    content: "●";
+    color: rgb(230, 122, 122);
+}
+
+.contents p:nth-child(3)::first-letter{ 
+    color: rgb(97, 206, 249);
+    font-weight: bold;
+}
+
+img{
+    margin: 10px;
+    width: 70%;
+}
+footer{
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
+
+a:visited{
+    color: rgb(193, 234, 251); 
+}
+a:hover{
+    color: rgb(245, 178, 168);
+}
+
+@media screen and (max-width: 768px) {
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 25px;
+    }
+    #parent{
+        flex-direction: column;
+    }
+}
+
